@@ -15,4 +15,4 @@ $pem_trimed = substr($public_key_pem, (strpos($public_key_pem, $string_start)+st
 $der = base64_decode($pem_trimed);
 
 // 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU= is an empty hash
-echo PHP_EOL. 'Header always set Public-Key-Pins "pin-sha256=\"' . base64_encode(openssl_digest($der,'sha256',true)) .'\"; max-age=5184000"'. PHP_EOL;
+echo PHP_EOL. "Header always set Public-Key-Pins 'pin-sha256=\"" . base64_encode(openssl_digest($der,'sha256',true)) ."\"; pin-sha256=\"bZ3qT75yZLagDEADBEEF0h3KAseeheXXJ5dliOfLB2A=\"; max-age=5184000'". PHP_EOL;
