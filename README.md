@@ -1,5 +1,7 @@
 # public-key-pinning-php-for-httpd-apache
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c17796f7-cee8-49ae-bebf-996b746a017b/mini.png)](https://insight.sensiolabs.com/projects/c17796f7-cee8-49ae-bebf-996b746a017b)
+
 ```
 C:\>php public_pinning.php example.crt
 ```
